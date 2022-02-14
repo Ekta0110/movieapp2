@@ -18,25 +18,19 @@
 
                 <th>
 
-                    Id
+                    Movie
 
                 </th>
 
                 <th>
 
-                    Title
+                    Actor
 
                 </th>
 
                 <th>
 
-                    Director
-
-                </th>
-
-                <th>
-
-                    DateReleased
+                    Producer
 
                 </th>
 
@@ -48,36 +42,31 @@
 
                 <td>
 
-                    <%= Html.ActionLink("Edit", "Edit", new { id=item.Id }) %> |
+                    <%= Html.ActionLink("Edit", "Edit", new { id=item.Movie}) %> |
 
-                    <%= Html.ActionLink("Details", "Details", new { id=item.Id })%>
-
-                </td>
-
-                <td>
-
-                    <%= Html.Encode(item.Id) %>
+                    <%= Html.ActionLink("Details", "Details", new { id=item.Movie })%>
 
                 </td>
 
                 <td>
 
-                    <%= Html.Encode(item.Title) %>
+                    <%= Html.Encode(item.Movie) %>
 
                 </td>
 
                 <td>
 
-                    <%= Html.Encode(item.Director) %>
+                    <%= Html.Encode(item.Actor) %>
 
                 </td>
 
                 <td>
 
-                    <%= Html.Encode(String.Format("{0:g}", item.DateReleased)) %>
+                    <%= Html.Encode(item.Producer) %>
 
                 </td>
 
+             
             </tr>
 
         <% } %> 
